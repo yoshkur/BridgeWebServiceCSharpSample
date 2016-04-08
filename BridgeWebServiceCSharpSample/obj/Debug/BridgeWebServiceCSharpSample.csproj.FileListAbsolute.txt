@@ -1,0 +1,12 @@
+c:\users\user\documents\visual studio 2015\Projects\BridgeWebServiceCSharpSample\BridgeWebServiceCSharpSample\bin\Debug\BridgeWebServiceCSharpSample.exe.config
+c:\users\user\documents\visual studio 2015\Projects\BridgeWebServiceCSharpSample\BridgeWebServiceCSharpSample\bin\Debug\BridgeWebServiceCSharpSample.exe
+c:\users\user\documents\visual studio 2015\Projects\BridgeWebServiceCSharpSample\BridgeWebServiceCSharpSample\bin\Debug\BridgeWebServiceCSharpSample.pdb
+c:\users\user\documents\visual studio 2015\Projects\BridgeWebServiceCSharpSample\BridgeWebServiceCSharpSample\obj\Debug\BridgeWebServiceCSharpSample.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\BridgeWebServiceCSharpSample\BridgeWebServiceCSharpSample\obj\Debug\BridgeWebServiceCSharpSample.Form1.resources
+c:\users\user\documents\visual studio 2015\Projects\BridgeWebServiceCSharpSample\BridgeWebServiceCSharpSample\obj\Debug\BridgeWebServiceCSharpSample.Properties.Resources.resources
+c:\users\user\documents\visual studio 2015\Projects\BridgeWebServiceCSharpSample\BridgeWebServiceCSharpSample\obj\Debug\BridgeWebServiceCSharpSample.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2015\Projects\BridgeWebServiceCSharpSample\BridgeWebServiceCSharpSample\obj\Debug\BridgeWebServiceCSharpSample.exe
+c:\users\user\documents\visual studio 2015\Projects\BridgeWebServiceCSharpSample\BridgeWebServiceCSharpSample\obj\Debug\BridgeWebServiceCSharpSample.pdb
+C:\Users\user\Source\Repos\BridgeWebServiceCSharpSample\BridgeWebServiceCSharpSample\bin\Debug\BridgeWebServiceCSharpSample.exe.config
+C:\Users\user\Source\Repos\BridgeWebServiceCSharpSample\BridgeWebServiceCSharpSample\obj\Debug\BridgeWebServiceCSharpSample.exe
+C:\Users\user\Source\Repos\BridgeWebServiceCSharpSample\BridgeWebServiceCSharpSample\obj\Debug\BridgeWebServiceCSharpSample.pdb

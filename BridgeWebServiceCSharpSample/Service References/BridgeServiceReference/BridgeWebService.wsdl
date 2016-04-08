@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://service.bridgemanagement.kurata.jp.net/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="BridgeWebService" targetNamespace="http://service.bridgemanagement.kurata.jp.net/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://www.kurata.jp.net:8080/BridgeWebService/BridgeWebService?xsd=1" namespace="http://service.bridgemanagement.kurata.jp.net/" />
+    </xsd:schema>
+  </types>
+  <message name="hello">
+    <part name="parameters" element="tns:hello" />
+  </message>
+  <message name="helloResponse">
+    <part name="parameters" element="tns:helloResponse" />
+  </message>
+  <message name="getBridgeList">
+    <part name="parameters" element="tns:getBridgeList" />
+  </message>
+  <message name="getBridgeListResponse">
+    <part name="parameters" element="tns:getBridgeListResponse" />
+  </message>
+  <portType name="BridgeWebService">
+    <operation name="hello">
+      <input wsam:Action="http://service.bridgemanagement.kurata.jp.net/BridgeWebService/helloRequest" message="tns:hello" />
+      <output wsam:Action="http://service.bridgemanagement.kurata.jp.net/BridgeWebService/helloResponse" message="tns:helloResponse" />
+    </operation>
+    <operation name="getBridgeList">
+      <input wsam:Action="http://service.bridgemanagement.kurata.jp.net/BridgeWebService/getBridgeListRequest" message="tns:getBridgeList" />
+      <output wsam:Action="http://service.bridgemanagement.kurata.jp.net/BridgeWebService/getBridgeListResponse" message="tns:getBridgeListResponse" />
+    </operation>
+  </portType>
+  <binding name="BridgeWebServicePortBinding" type="tns:BridgeWebService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="hello">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getBridgeList">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="BridgeWebService">
+    <port name="BridgeWebServicePort" binding="tns:BridgeWebServicePortBinding">
+      <soap:address location="http://www.kurata.jp.net:8080/BridgeWebService/BridgeWebService" />
+    </port>
+  </service>
+</definitions>

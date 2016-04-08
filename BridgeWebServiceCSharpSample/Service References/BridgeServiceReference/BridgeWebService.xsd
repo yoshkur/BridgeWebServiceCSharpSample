@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://service.bridgemanagement.kurata.jp.net/" targetNamespace="http://service.bridgemanagement.kurata.jp.net/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="bridge" type="tns:bridge" />
+  <xs:element name="bridges" type="tns:bridgeList" />
+  <xs:element name="getBridgeList" type="tns:getBridgeList" />
+  <xs:element name="getBridgeListResponse" type="tns:getBridgeListResponse" />
+  <xs:element name="hello" type="tns:hello" />
+  <xs:element name="helloResponse" type="tns:helloResponse" />
+  <xs:complexType name="hello">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="helloResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getBridgeList">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getBridgeListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:bridgeList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bridgeList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="bridgeList" nillable="true" type="tns:bridge" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bridge">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="address" type="xs:string" />
+      <xs:element minOccurs="0" name="age" type="xs:int" />
+      <xs:element minOccurs="0" name="bridgelength" type="xs:decimal" />
+      <xs:element minOccurs="0" name="bridgename" type="xs:string" />
+      <xs:element minOccurs="0" name="bridgestructure" type="xs:string" />
+      <xs:element minOccurs="0" name="bridgewidth" type="xs:decimal" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="latitude" type="xs:string" />
+      <xs:element minOccurs="0" name="ledgernumber" type="xs:int" />
+      <xs:element minOccurs="0" name="longitude" type="xs:string" />
+      <xs:element minOccurs="0" name="lowermaterial" type="xs:string" />
+      <xs:element minOccurs="0" name="made" type="xs:int" />
+      <xs:element minOccurs="0" name="managementnumber" type="xs:int" />
+      <xs:element minOccurs="0" name="memo" type="xs:string" />
+      <xs:element minOccurs="0" name="office" type="xs:string" />
+      <xs:element minOccurs="0" name="route" type="xs:string" />
+      <xs:element minOccurs="0" name="span" type="xs:int" />
+      <xs:element minOccurs="0" name="uppermaterial" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
